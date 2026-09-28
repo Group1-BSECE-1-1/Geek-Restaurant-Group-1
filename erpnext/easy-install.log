@@ -1,0 +1,6 @@
+2026-09-28 02:27:20,967 - INFO - Running Production Setup
+2026-09-28 02:27:22,683 - INFO - Downloaded frappe_docker zip file from GitHub
+2026-09-28 02:27:22,720 - INFO - Unzipped and Renamed frappe_docker
+2026-09-28 02:27:22,720 - INFO - Removed the downloaded zip file
+2026-09-28 02:27:38,663 - INFO - Docker Compose file generated at ~/geek-restaurant-compose.yml
+2026-09-28 02:29:05,241 - INFO - New site creation completed
