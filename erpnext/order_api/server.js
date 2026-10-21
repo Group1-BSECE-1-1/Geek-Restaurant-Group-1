@@ -1,4 +1,4 @@
-
+require("dotenv").config();
 const express = require('express');
 
 const app = express();
@@ -46,7 +46,6 @@ const ERP_ENABLED = Boolean(ERP_KEY && ERP_SECRET);
 
 // Item codes supplied for Geek Restaurant.
 const ITEM_CODES = [
-  'D001',
   'D001-L',
   'D001-M',
   'D001-S',
@@ -62,7 +61,6 @@ const ITEM_CODES = [
   'DS003-STRW-F',
   'DS003-STRW-NF',
   'M001',
-  'M0011',
   'M0011-NSP',
   'M0011-SP',
   'M002'
