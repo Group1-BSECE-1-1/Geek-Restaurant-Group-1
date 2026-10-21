@@ -1,0 +1,37 @@
+
+_format_version: "3.0"
+
+services:
+  - name: order-api
+    url: http://host.docker.internal:3000
+    routes:
+      - name: menu
+        paths:
+          - /api/v1/menu
+        strip_path: false
+      - name: orders
+        paths:
+          - /api/v1/orders
+        strip_path: false
+      - name: kitchen
+        paths:
+          - /api/v1/kitchen
+        strip_path: false
+      - name: display
+        paths:
+          - /api/v1/display
+        strip_path: false
+
+plugins:
+  - name: cors
+    config:
+      origins:
+        - "*"
+      methods:
+        - GET
+        - POST
+        - PATCH
+        - OPTIONS
+      headers:
+        - Content-Type
+        - Authorization
